@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبدیل ارز</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js "></script>
+    <link rel="stylesheet" href="inx.css">
+</head>
+
+<body>
+    <h1 class="h1">تبدیل ارز</h1>
+    <form action="/convert" method="post">
+        <label for="amount">مبلغ:</label>
+        <input type="number" id="amount" name="amount" required><br><br>
+
+        <label for="sourceCurrency">ارز مبدا:</label>
+        <select id="sourceCurrency" name="exchangeRate.base_currency.id" class="name" required>
+            <option value="USD">دلار آمریکا</option>
+            <option value="EUR">یورو</option>
+            <option value="GBP">پوند بریتانیایی</option>
+        </select><br><br>
+
+        <label for="targetCurrency">ارز مقصد</label>
+        <select id="targetCurrency" name="exchangeRate.target_currency.id" required>
+            <option value="USD">دلار آمریکا</option>
+            <option value="EUR">یورو</option>
+            <option value="GBP">پوند بریتانیایی</option>
+        </select><br><br>
+
+        <button type="submit" class="but">تبدیل</button>
+    </form>
+
+    <div id="result"></div>
+
+   
+    <script src="inx.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+  .h1 {
+text-align: center;
+  }
+  form {
+    text-align: center;
+    border: solid #4B5563 8px;
+    background-color: blueviolet;
+    border-radius: 5px;
+
+  }
+  .but {
+    background-color: green;
+    width: 100px;
+  }
+  
